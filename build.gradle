@@ -13,7 +13,6 @@ buildscript {
         navigation_version="2.3.5"
         lifecycle_version="2.3.1"
 
-        datastore_version="1.0.0-beta02"
         room_version="2.3.0"
         koin_version="3.1.1"
         //hiltVersion = '2.33-beta'

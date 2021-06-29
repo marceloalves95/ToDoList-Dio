@@ -58,9 +58,6 @@ dependencies {
     //Navigation
     implementation "androidx.navigation:navigation-fragment-ktx:$navigation_version"
     implementation "androidx.navigation:navigation-ui-ktx:$navigation_version"
-    //DataStore
-    //implementation "androidx.datastore:datastore-core:$datastore_version"
-    implementation "androidx.datastore:datastore-preferences:$datastore_version"
     //Koin
     implementation "io.insert-koin:koin-android:$koin_version"
     //Room
