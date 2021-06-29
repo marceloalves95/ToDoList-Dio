@@ -407,9 +407,9 @@ class MainActivit{
 
 #### Telas do Aplicativo
 
-|           ![]()            | ![]()                       |
+|           ![](tarefa.png)            | ![](pesquisar.png)                       |
 | :------------------------: | --------------------------- |
 | Tela inicial do aplicativo | Tela de pesquisa            |
-|           ![]()            | ![]()                       |
+|           ![](criarTarefa.png)            | ![](alterarTarefa.png)                       |
 | Tela de criação da tarefa  | Tela de alteração da tarefa |
 
