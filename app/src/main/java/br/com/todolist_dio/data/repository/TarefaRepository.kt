@@ -13,5 +13,4 @@ class TarefaRepository(private val tarefaDao: TarefaDao) {
     suspend fun update(tarefa: Tarefa) = tarefaDao.update(tarefa)
     suspend fun allTarefas():MutableList<Tarefa> = tarefaDao.allTarefas()
     suspend fun deleteAll(id:MutableList<Int>) = tarefaDao.deleteAll(id)
-
 }
