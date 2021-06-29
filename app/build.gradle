@@ -42,7 +42,7 @@ android {
 dependencies {
 
     kapt "androidx.room:room-compiler:$room_version"
-    //kapt "com.google.dagger:hilt-android-compiler:$hiltVersion"
+    kapt "com.google.dagger:hilt-android-compiler:$hiltVersion"
 
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
@@ -58,23 +58,17 @@ dependencies {
     //Navigation
     implementation "androidx.navigation:navigation-fragment-ktx:$navigation_version"
     implementation "androidx.navigation:navigation-ui-ktx:$navigation_version"
-    //DataStore
-    //implementation "androidx.datastore:datastore-core:$datastore_version"
-    implementation "androidx.datastore:datastore-preferences:$datastore_version"
-    //Koin
-    implementation "io.insert-koin:koin-android:$koin_version"
     //Room
     implementation "androidx.room:room-runtime:$room_version"
     implementation "androidx.room:room-ktx:$room_version"
     //Dagger Hilt
-    //implementation "com.google.dagger:hilt-android:$hiltVersion"
-    //annotationProcessor "com.google.dagger:hilt-android-compiler:$hiltVersion"
+    implementation "com.google.dagger:hilt-android:$hiltVersion"
+    annotationProcessor "com.google.dagger:hilt-android-compiler:$hiltVersion"
 
     //Testes
     testImplementation "junit:junit:$test_junit_version"
     testImplementation "androidx.room:room-testing:$room_version"
-    testImplementation "io.insert-koin:koin-test:$koin_version"
     androidTestImplementation "androidx.test.ext:junit:$test_ext_junit_version"
     androidTestImplementation "androidx.test.espresso:espresso-core:$espresso_core_version"
-    //androidTestImplementation "com.google.dagger:hilt-android-testing:$hiltVersion"
+    androidTestImplementation "com.google.dagger:hilt-android-testing:$hiltVersion"
 }
