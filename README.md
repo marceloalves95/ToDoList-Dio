@@ -1,5 +1,5 @@
 # ToDoList-Dio
->  Esse projeto foi proposto no Bootcamping Santader Mobile Developer. Ele é um projeto de lista de lembranças e tarefas. O projeto utiliza os seguintes items: injeção de dependência com Koin & Dagger Hilt, banco de dados com Room, e Navigation.
+>  Esse projeto foi proposto no Bootcamping Santader Mobile Developer. Ele é um projeto de lista de lembranças e tarefas. O projeto utiliza os seguintes items: Injeção de dependência com Koin & Dagger Hilt, Banco de Dados com Room, e Navigation.
 
 #### Branches
 
