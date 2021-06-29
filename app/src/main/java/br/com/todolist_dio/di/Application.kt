@@ -1,21 +1,11 @@
 package br.com.todolist_dio.di
 
 import android.app.Application
-import org.koin.android.ext.koin.androidContext
-import org.koin.core.context.startKoin
+import dagger.hilt.android.HiltAndroidApp
 
 /**
  * @author RubioAlves
- * Created 28/06/2021 at 12:17
+ * Created 29/06/2021 at 14:34
  */
-class Application:Application() {
-
-    override fun onCreate() {
-        super.onCreate()
-        startKoin {
-            androidContext(this@Application)
-            modules(appModules)
-        }
-
-    }
-}
+@HiltAndroidApp
+class Application:Application()
