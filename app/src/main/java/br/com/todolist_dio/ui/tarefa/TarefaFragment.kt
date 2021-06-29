@@ -9,25 +9,25 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.appcompat.widget.SearchView
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import br.com.todolist_dio.R
 import br.com.todolist_dio.databinding.TarefaFragmentBinding
-import org.koin.androidx.viewmodel.ext.android.viewModel
-
+import dagger.hilt.android.AndroidEntryPoint
 
 /**
  * @author RubioAlves
  * Created 26/06/2021 at 13:51
  */
-
+@AndroidEntryPoint
 class TarefaFragment : Fragment() {
 
     private var _binding: TarefaFragmentBinding? = null
     private val binding get() = _binding!!
     private lateinit var tarefaAdapter:TarefaAdapter
     var actionMode: ActionMode? = null
-    private val viewModel:TarefaViewModel by viewModel()
+    private val viewModel:TarefaViewModel by viewModels()
     private val listarId = mutableListOf<Int>()
 
     override fun onCreateView(

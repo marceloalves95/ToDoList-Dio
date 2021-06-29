@@ -9,6 +9,7 @@ import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import br.com.todolist_dio.R
@@ -21,7 +22,7 @@ import com.google.android.material.button.MaterialButton
 import com.google.android.material.textfield.MaterialAutoCompleteTextView
 import com.google.android.material.textfield.TextInputEditText
 import com.google.android.material.textfield.TextInputLayout
-import org.koin.androidx.viewmodel.ext.android.viewModel
+import dagger.hilt.android.AndroidEntryPoint
 import java.text.SimpleDateFormat
 import java.util.*
 
@@ -29,6 +30,7 @@ import java.util.*
  * @author RubioAlves
  * Created 26/06/2021 at 14:03
  */
+@AndroidEntryPoint
 class DetailTarefaFragment : Fragment() {
 
     private var _binding: DetailTarefaFragmentBinding? = null
@@ -36,7 +38,7 @@ class DetailTarefaFragment : Fragment() {
     private val validadores: MutableList<Validador> = ArrayList()
     private val nomeCores: MutableList<String> = mutableListOf()
     private val cores: MutableList<String> = mutableListOf()
-    private val viewModel: TarefaViewModel by viewModel()
+    private val viewModel: TarefaViewModel by viewModels()
     private val args by navArgs<DetailTarefaFragmentArgs>()
 
     private lateinit var titulo: String

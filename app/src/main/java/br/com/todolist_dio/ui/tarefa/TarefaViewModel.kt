@@ -5,13 +5,16 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import br.com.todolist_dio.data.repository.TarefaRepository
 import br.com.todolist_dio.domain.Tarefa
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
+import javax.inject.Inject
 
 /**
  * @author RubioAlves
  * Created 28/06/2021 at 13:26
  */
-class TarefaViewModel(private val repository: TarefaRepository):ViewModel(){
+@HiltViewModel
+class TarefaViewModel @Inject constructor(private val repository: TarefaRepository):ViewModel(){
 
     val listAll = MutableLiveData<MutableList<Tarefa>>()
 
