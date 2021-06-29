@@ -1,3 +1,24 @@
 <resources>
     <string name="app_name">ToDoList-Dio</string>
+    <string name="title_tarefas">Minhas Tarefas</string>
+    <string name="title_detail_tarefas">Criar Tarefa</string>
+    <string name="titulo">Titulo</string>
+    <string name="descricao">Descrição</string>
+    <string name="data">Data</string>
+    <string name="horario">Horário</string>
+    <string name="criar_tarefa">Criar Tarefa</string>
+    <string name="alterar_tarefa">Alterar Tarefa</string>
+    <string name="escolha_cor">Escolha uma cor</string>
+    <string name="status">Status</string>
+    <string name="abrir">Abrir</string>
+    <string name="fazer">A fazer</string>
+    <string name="deletar_tarefa">Deletar Tarefa</string>
+    <string name="search">Procurar</string>
+    <string name="temaClaro">Tema Claro</string>
+    <string name="temaEscuro">Tema Escuro</string>
+    <string-array name="lista_status">
+        <item>A fazer</item>
+        <item>Fazendo</item>
+        <item>Feito</item>
+    </string-array>
 </resources>

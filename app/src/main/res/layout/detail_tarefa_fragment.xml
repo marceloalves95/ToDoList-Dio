@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/campoTitulo"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="@string/titulo"
+        app:endIconMode="clear_text"
+        app:startIconDrawable="@drawable/ic_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/campoDescricao"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/descricao"
+        app:endIconMode="clear_text"
+        app:startIconDrawable="@drawable/ic_subtitles"
+        app:layout_constraintEnd_toEndOf="@+id/campoTitulo"
+        app:layout_constraintStart_toStartOf="@+id/campoTitulo"
+        app:layout_constraintTop_toBottomOf="@+id/campoTitulo">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/descricao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/campoData"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/data"
+        app:endIconMode="clear_text"
+        app:layout_constraintEnd_toEndOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="@+id/campoDescricao"
+        app:layout_constraintTop_toBottomOf="@+id/campoDescricao"
+        app:startIconDrawable="@drawable/ic_event">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.6" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/campoHorario"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/horario"
+        app:endIconMode="clear_text"
+        app:layout_constraintEnd_toEndOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="@+id/campoData"
+        app:layout_constraintTop_toBottomOf="@+id/campoData"
+        app:startIconDrawable="@drawable/ic_timer">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/horario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/campoCores"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/escolha_cor"
+        app:layout_constraintEnd_toEndOf="@+id/abrirTimer"
+        app:layout_constraintStart_toStartOf="@+id/campoData"
+        app:layout_constraintTop_toBottomOf="@+id/campoHorario"
+        app:startIconDrawable="@drawable/ic_palette">
+
+        <com.google.android.material.textfield.MaterialAutoCompleteTextView
+            android:id="@+id/cores"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/campoStatus"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/status"
+        app:startIconDrawable="@drawable/ic_task"
+        app:layout_constraintEnd_toEndOf="@+id/campoCores"
+        app:layout_constraintStart_toStartOf="@+id/campoCores"
+        app:layout_constraintTop_toBottomOf="@+id/campoCores">
+
+        <com.google.android.material.textfield.MaterialAutoCompleteTextView
+            android:id="@+id/status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/tarefa"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/criar_tarefa"
+        android:background="@color/blue_indigo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/abrirCalendario"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/button_selector"
+        app:icon="@drawable/ic_event"
+        android:text="@string/abrir"
+        app:iconGravity="start"
+        app:iconPadding="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/campoData"
+        app:layout_constraintEnd_toEndOf="@+id/campoDescricao"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="@+id/campoData" />
+
+    <Button
+        android:id="@+id/abrirTimer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/button_selector"
+        app:icon="@drawable/ic_timer"
+        android:text="@string/abrir"
+        app:iconGravity="start"
+        app:iconPadding="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/campoHorario"
+        app:layout_constraintEnd_toEndOf="@+id/abrirCalendario"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="@+id/campoHorario" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
