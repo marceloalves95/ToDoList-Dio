@@ -5,8 +5,8 @@
 
 Esse projeto está dividido em duas branches:
 
-- [ToDoList-Dio com Koin](#https://github.com/marceloalves95/ToDoList-Dio/tree/ToDoListDio-Koin)
-- [ToDoList-Dio com DaggerHilt](#https://github.com/marceloalves95/ToDoList-Dio/tree/ToDoListDio-DaggerHilt)
+- [ToDoList-Dio com Koin](https://github.com/marceloalves95/ToDoList-Dio/tree/ToDoListDio-Koin)
+- [ToDoList-Dio com DaggerHilt](https://github.com/marceloalves95/ToDoList-Dio/tree/ToDoListDio-DaggerHilt)
 
 Para mais detalhes sobre a implementação de cada injeção de dependência, escolha a branch acima ou digite o código abaixo para baixar a branch especifica:
 
